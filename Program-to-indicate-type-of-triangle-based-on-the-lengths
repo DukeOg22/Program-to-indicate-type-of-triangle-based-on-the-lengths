@@ -1,0 +1,22 @@
+ public static void Q4() {
+        double a, b, c;
+
+        System.out.println("Enter the value for A");
+        Scanner mya =new Scanner(System.in);
+        a = mya.nextDouble();
+
+        System.out.println("Enter the value for B");
+        b= mya.nextDouble();
+
+        System.out.println("Enter the value for C");
+        c = mya.nextDouble();
+
+        if (a == b && a == c) {
+            System.out.println("This is an Equilateral Triangle");
+        } else if (a != b && a != c && ((a * a) + (b * b) != (c * c) && (c * c) + (b * b) != (a * a) && (a * a) + (c * c) != (b * b))) {
+            System.out.println(" This is a Scalene Triangle");
+        } else if ((a * a) + (b * b) == (c * c) || (c * c) + (b * b) == (a * a) || (a * a) + (c * c) == (b * b)) {
+            System.out.println("This is a Right-Angled Triangle");
+        }
+
+    }
